@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Circle with coordinates around point on map. - jsFiddle demo</title>
+      <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css">
+      <script type='text/javascript' src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet-src.js"></script>
+      <script type='text/javascript' src="distance.js"></script>
+</head>
+<body>
+	  <div id="map" style="width: 800px; height: 600px"></div>
+	  <a href="http://leafletjs.com/reference.html">Leaflet-JS documentation</a>
+<script type='text/javascript'>
+
+    Array.prototype.getUnique = function(){
+        var u = {}, a = [];
+        for(var i = 0, l = this.length; i < l; ++i){
+            if(u.hasOwnProperty(this[i].toString())) {
+                continue;
+            }
+            a.push(this[i]);
+            u[this[i].toString()] = 1;
+        }
+        return a;
+    }
+
+    Array.prototype.findMinYPointIndex = function(){
+        var minI = this.length;
+        var min = 360;
+        for(i = 0; i < this.length; i++) {
+            if(min < this[i].lat){
+                minI = i;
+                min = this[i].lat;
+            }
+        }
+        return i;
+    }
+    Array.prototype.removeByIndex = function(i){
+        this.splice(i, 1);
+    }
+
+    Array.prototype.remove = function(obj){
+        this.splice(this.indexOf(obj), 1);
+    }
+
+
+    L.LatLng.prototype.angleTo = function(prevPoint, point){
+        //todo!
+        return null;
+    }
+
+    Array.prototype.sortByAngle = function (prevPoint, point){
+        //todo!
+    }
+
+    L.LatLng.nearestPoints = function(points, count){
+        //todo!
+        return points.slice(0, count);
+    }
+
+    Array.prototype.pointInPolygon = function (point) {
+        // (c) https://github.com/substack/point-in-polygon
+        // ray-casting algorithm based on
+        // http://www.ecse.rpi.edu/Homepages/wrf/Research/Short_Notes/pnpoly.html
+        var x = point.lat, y = point.lng;
+        var inside = false;
+        for (var i = 0, j = this.length - 1; i < this.length; j = i++) {
+            var xi = this[i].lat, yi = this[i].lng;
+            var xj = this[j].lat, yj = this[j].lng;
+            var intersect = ((yi > y) != (yj > y))
+                    && (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+            if (intersect) inside = !inside;
+        }
+        return inside;
+    };
+
+    function intersectQ(p00, p01, p10, p11){
+        //returns if segments p00-p01 and p10-p11 intersects
+        //todo!
+        return false;
+    }
+
+
+    Array.prototype.concaveHull = function(k){
+        if(k < 3)
+            return [];
+        var dataset = this.getUnique();
+        if(this.length <= 3)
+            return this;
+        var kk = Math.min(k,dataset.length-1);
+        var firstPoint = dataset.findMinYPoint();
+        var hull = [];
+        hull.push(firstPoint);
+        var currentPoint  = firstPoint;
+        dataset.remove(firstPoint);
+        var prevAngle = 0;
+        var prevPoint = firstPoint;
+        var step = 2;
+        while (((currentPoint != firstPoint) || (step == 2)) && (dataset.length > 0)){
+            if (step ==5){
+                dataset.push(firstPoint)
+            }
+            var cPoints = dataset.nearestPoints(currentPoint,kk);
+            cPoints.sortByAngle(currentPoint, prevAngle);
+            var its = true;
+            var i = 0;
+            var j = 0;
+            var lastPoint = 0;
+            while (its && (i < cPoints.length)){
+                if(cPoints[i] == firstPoint)
+                    lastPoint = 1;
+                else
+                    lastPoint = 0;
+                j = 1;
+                its = false;
+                while(!its && (j < hull.length - lastPoint)){
+                    its  = intersectsQ(hull[step - 1],cPoints[i], hull[step - 1 - j],hull[step - j]);
+                    j++;
+                }
+                if(its)//since all candidates intersect at least one edge, try again with a higher number of neighbours
+                    return this.concaveHull(kk+1);
+                currentPoint = cPoints[i];
+                hull.push(currentPoint);//a valid candidate was found
+                prevAngle = hull[step].angleTo(hull[step-1]);
+                dataset.remove(currentPoint);
+                step++;
+                i++;
+            }
+            var allInside = true;
+            i = dataset.length - 1;
+            while (allInside && i > 0) {// check if all the given points are inside the computed polygon
+                allInside = hull.pointInPolygon(dataset[i]);
+                i--;
+            }
+            if(!allInside)
+                return this.concaveHull(kk+1); //since at least one point is out of the computed polygon, try again with a higher number of neighbours
+            return hull;
+        }
+
+    }
+
+
+    var map = L.map('map').setView(points[0].coord, 13);
+    L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+    //L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18
+        }).addTo(map);
+
+    var pts = [];
+    for(var i = 0; i < points.length; i++){
+        //var r = L.circleMarker(new L.latLng(points[i].road),{color:"#F00", radius:1}).addTo(map);
+        //var b = L.circleMarker(new L.latLng(points[i].coord),{color:"#00F", radius:1}).addTo(map);
+        pts.push(new L.latLng(points[i].coord));
+        pts.push(new L.latLng(points[i].road));
+        var pt = pts.getUnique();
+    }
+    for(i = 0; i < pts.length; i++){
+        var rr = L.circleMarker(pts[i],{color:"#000", radius:1}).addTo(map);
+    }
+
+
+    L.polygon(pts.ConcaveHull(3)).addTo(map);
+
+
+</script>
+
+
+</body>
+
+
+</html>
+
