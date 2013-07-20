@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/distance.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <ignored path="ConcaveHull.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374224746978" ignored="false" />
-    <file path="/test.html" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374262066514" ignored="false" />
-    <file path="/fragment.js" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374227815435" ignored="false" />
+    <file path="/test.html" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374331833966" ignored="false" />
+    <file path="/fragment.js" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374330450874" ignored="false" />
+    <file path="/a.dummy" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374271126388" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -40,8 +45,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -57,8 +62,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
     <breakpoint_rules />
@@ -73,25 +78,26 @@
       <file leaf-file-name="test.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="25" selection-start="3742" selection-end="3742" vertical-scroll-proportion="0.46526867">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="distance.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/distance.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="13" column="24" selection-start="591" selection-end="591" vertical-scroll-proportion="-0.9536585">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3147#3782#0" expanded="false" />
+                <element signature="e#3837#5500#0" expanded="false" />
+                <element signature="e#8380#8541#0" expanded="false" />
+                <element signature="e#8585#9134#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="leaflet-src.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet-src.js">
-          <provider selected="true" editor-type-id="httpFileEditor">
-            <state />
+        <entry file="file://$PROJECT_DIR$/leaflet-src.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6221" column="35" selection-start="143636" selection-end="143636" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -119,9 +125,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="width" value="1260" />
-    <option name="height" value="985" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -179,7 +186,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/test.html" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
@@ -317,30 +324,50 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="0" width="1260" height="985" extended-state="1" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3470375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4365362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32009724" sideWeight="0.5634638" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16444074" sideWeight="0.6529625" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="607" y="128" width="494" height="843" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16288492" sideWeight="0.5634638" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -406,18 +433,30 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>http://cdn.leafletjs.com/leaflet-0.6.2/leaflet-src.js</url>
-          <line>1143</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/test.html</url>
+          <line>196</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="47" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet-src.js">
       <provider selected="true" editor-type-id="httpFileEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leaflet.label.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/distance.js">
@@ -427,10 +466,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/leaflet-src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6221" column="35" selection-start="143636" selection-end="143636" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Marker.Text.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="27" selection-start="593" selection-end="593" vertical-scroll-proportion="0.56792873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="55" selection-start="567" selection-end="573" vertical-scroll-proportion="0.5224586">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="25" selection-start="3742" selection-end="3742" vertical-scroll-proportion="0.46526867">
-          <folding />
+        <state line="13" column="24" selection-start="591" selection-end="591" vertical-scroll-proportion="-0.9536585">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3147#3782#0" expanded="false" />
+            <element signature="e#3837#5500#0" expanded="false" />
+            <element signature="e#8380#8541#0" expanded="false" />
+            <element signature="e#8585#9134#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
