@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\home\OSRM\ConcaveHull\Marker.Text.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\OSRM\ConcaveHull\images\blank.psd" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\OSRM\ConcaveHull\images\marker-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\OSRM\ConcaveHull\images\marker-shadow.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConcaveHull.iws" afterPath="$PROJECT_DIR$/ConcaveHull.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distance.js" afterPath="$PROJECT_DIR$/distance.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.html" afterPath="$PROJECT_DIR$/sample.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <ignored path="ConcaveHull.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374224746978" ignored="false" />
-    <file path="/test.html" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374331833966" ignored="false" />
-    <file path="/fragment.js" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374330450874" ignored="false" />
+    <file path="/test.html" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374350584295" ignored="false" />
+    <file path="/fragment.js" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374420072171" ignored="false" />
     <file path="/a.dummy" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374271126388" ignored="false" />
+    <file path="/angle.js" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374336043216" ignored="false" />
+    <file path="/sample.html" changelist="7f20064c-7bf9-44e2-b0c7-c5ac81594b3b" time="1374423461922" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,27 +85,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.html">
+      <file leaf-file-name="sample.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sample.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="24" selection-start="591" selection-end="591" vertical-scroll-proportion="-0.9536585">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#3147#3782#0" expanded="false" />
-                <element signature="e#3837#5500#0" expanded="false" />
-                <element signature="e#8380#8541#0" expanded="false" />
-                <element signature="e#8585#9134#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leaflet-src.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leaflet-src.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6221" column="35" selection-start="143636" selection-end="143636" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#2923#3246#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -120,7 +116,9 @@
     <option name="changedFiles">
       <list>
         <option value="cdn.leafletjs.com/leaflet-0.6.2/leaflet-src.js" />
+        <option value="$PROJECT_DIR$/angle.js" />
         <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/sample.html" />
       </list>
     </option>
   </component>
@@ -301,7 +299,7 @@
     <configuration default="false" name="Test" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="chrome" />
-        <option name="fileUrl" value="file://$PROJECT_DIR$/test.html" />
+        <option name="fileUrl" value="file://$PROJECT_DIR$/sample.html" />
       </JSDebuggerConfigurationSettings>
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -354,7 +352,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4365362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46975088" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -364,7 +362,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="607" y="128" width="494" height="843" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16288492" sideWeight="0.5634638" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3581315" sideWeight="0.5062344" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -433,15 +431,21 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
+          <condition>step==18</condition>
           <url>file://$PROJECT_DIR$/test.html</url>
-          <line>196</line>
-          <option name="timeStamp" value="46" />
+          <line>217</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test.html</url>
+          <line>329</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="47" />
+      <option name="time" value="68" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -466,40 +470,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/ECMAScript.js2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="29" selection-start="5331" selection-end="5331" vertical-scroll-proportion="0.3325688">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="475" column="5" selection-start="7567" selection-end="7567" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="328" column="0" selection-start="11217" selection-end="11217" vertical-scroll-proportion="-4.8846154">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/leaflet-src.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6221" column="35" selection-start="143636" selection-end="143636" vertical-scroll-proportion="0.0">
+        <state line="1152" column="33" selection-start="27898" selection-end="27898" vertical-scroll-proportion="6.3863635">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Marker.Text.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="593" selection-end="593" vertical-scroll-proportion="0.56792873">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="55" selection-start="567" selection-end="573" vertical-scroll-proportion="0.5224586">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="591" selection-end="591" vertical-scroll-proportion="-0.9536585">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3147#3782#0" expanded="false" />
-            <element signature="e#3837#5500#0" expanded="false" />
-            <element signature="e#8380#8541#0" expanded="false" />
-            <element signature="e#8585#9134#0" expanded="false" />
+            <element signature="e#2923#3246#0" expanded="false" />
           </folding>
         </state>
       </provider>
