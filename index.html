@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Leaflet</title>
+    <title>Leaflet</title>
       <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css">
       <script type='text/javascript' src="leaflet-src.js"></script>
       <script type='text/javascript' src="distance.js"></script>
@@ -13,11 +13,11 @@
     </style>
 </head>
 <body>
-	<div style="width:100%; height:100%" id="map"></div>
+    <div style="width:100%; height:100%" id="map"></div>
 <script type='text/javascript'>
 var map = new L.Map('map', {zoom: 10});
 //var map = new L.Map('map', {center: points[100].coord, zoom: 12});
-map.addLayer(new L.TileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png'));
+map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'));
 var DEBUG = false;
 var markers = [];
 var poly = {};
