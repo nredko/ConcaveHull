@@ -38,10 +38,12 @@ Array.prototype.getUnique = function(){
 var map = L.map('map');
 map.addLayer(new L.TileLayer('http://{s}.tiles.mapbox.com/v3/nredko.ifiekjj3/{z}/{x}/{y}.png'));
 
-var DEBUG = true;
+var DEBUG = false;
+var DEBUG1 = false;
 function JSONP(obj){
     var points = obj.points;//.getUnique();
-    if(DEBUG) console.log(points.length + " points.");
+    //if(DEBUG) 
+    console.log(points.length + " points.");
     var pts = [];
     for(var i = 0; i < points.length; i++){
         var p = new L.latLng(points[i]);
@@ -55,16 +57,19 @@ function JSONP(obj){
     for(i = 0; i < pts.length; i ++){
         var rr = L.circleMarker(pts[i], {title: pts[i].name, color:"#000", radius:2, fillOpacity:1})
                 .addTo(map);
-        var myIcon = L.divIcon({className:'label', html:''+i});
-        L.marker(pts[i], {icon: myIcon}).addTo(map);
+        //var myIcon = L.divIcon({className:'label', html:''+i});
+        //L.marker(pts[i], {icon: myIcon}).addTo(map);
 
     }
-
     map.fitBounds(pts);
+//    console.log("56 <-> 2 = "+pts[56].distance2(pts[2]) + "("+pts[56].distanceTo(pts[2])+"m)");
+    var hull = pts.concaveHull(85000)
+    var hullP = L.polygon(hull, {color: '#00F', fillColor: '#00F', fillOpacity: 0.5, weight: 1});
+    console.log(hull.length + " points in hull.");
+    hullP.addTo(map);
 
-    var hull = L.polygon(pts.concaveHull(100), {color: '#00F', fillColor: '#00F', fillOpacity: 0.4, weight: 1});
-    hull.addTo(map);
-    map.fitBounds(hull);
+//    test = [pts[22], pts[2], pts[27]];
+//    console.log("22 -> 2 -> 27 => 2" + test.intersect(pts[2]));
 }
 
 </script>
@@ -72,7 +77,7 @@ function JSONP(obj){
 <!--
 <script type='text/javascript' src="http://127.0.0.1:5000/distance?jsonp=JSONP&loc=54.8625731,83.0933268&time=100"></script>
 -->
-<script type='text/javascript' src="data50.js"></script>
+<script type='text/javascript' src="data5400.js"></script>
 
 </body>
 
