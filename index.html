@@ -34,14 +34,14 @@ map.addLayer(new L.TileLayer('http://{s}.tiles.mapbox.com/v3/nredko.ifiekjj3/{z}
 
 var DEBUG = true;
 function JSONP(obj){
-    var points = obj.points;
+    var points = obj.points.getUnique();
     var pts = [];
     for(var i = 0; i < points.length; i++){
         var p = new L.latLng(points[i]);
         p.name = ''+i;
-        //var coord = L.CRS.EPSG3395.latLngToPoint(p, 18);
-        /*p.x = coord.x;
-        p.y = coord.y;*/
+        var coord = L.CRS.EPSG3395.latLngToPoint(p, 18);
+        p.x = coord.x;
+        p.y = coord.y;
         pts.push(p);
     }
 
@@ -55,9 +55,9 @@ function JSONP(obj){
 
     map.fitBounds(pts);
 
-    //var hull = L.polygon(pts.concaveHull(100), {color: '#00F', fillColor: '#00F', fillOpacity: 0.4, weight: 1});
-    //hull.addTo(map);
-    //map.fitBounds(hull);
+    var hull = L.polygon(pts.concaveHull(100), {color: '#00F', fillColor: '#00F', fillOpacity: 0.4, weight: 1});
+//    hull.addTo(map);
+    map.fitBounds(hull);
 }
 
 </script>
