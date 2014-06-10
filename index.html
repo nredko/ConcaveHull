@@ -3,14 +3,15 @@
     <title>Leaflet</title>
 <link rel="stylesheet" href="leaflet.css" />
 <script src="leaflet.js"></script>    
-<script src="hull.js"></script>    
-<style type="text/css">
+<script type='text/javascript' src="Marker.Text.js"></script>
+    <style type="text/css">
         .label {
             margin-top: 0px !important;
             font-size: 10px !important;
 
         }
     </style>
+<script src="hull.js"></script>    
 </head>
 <body>
     <div style="width:100%; height:100%" id="map"></div>
@@ -29,35 +30,43 @@ Array.prototype.getUnique = function(){
 }
 
 var map = L.map('map');
-//map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'));
 map.addLayer(new L.TileLayer('http://{s}.tiles.mapbox.com/v3/nredko.ifiekjj3/{z}/{x}/{y}.png'));
 
-var DEBUG = false;
-var markers = [];
-var poly = {};
-
-
+var DEBUG = true;
 function JSONP(obj){
     var points = obj.points;
     var pts = [];
     for(var i = 0; i < points.length; i++){
         var p = new L.latLng(points[i]);
-        p.name = i;
+        p.name = ''+i;
+        //var coord = L.CRS.EPSG3395.latLngToPoint(p, 18);
+        /*p.x = coord.x;
+        p.y = coord.y;*/
         pts.push(p);
     }
+
     for(i = 0; i < pts.length - 1; i += 2){
-        var rr = L.circleMarker(pts[i],{title:i,color:"#F00", radius:2})
+        var rr = L.circleMarker(pts[i], {title: pts[i].name, color:"#000", radius:2, fillOpacity:1})
                 .addTo(map);
+        var myIcon = L.divIcon({className:'label', html:''+i});
+        L.marker(pts[i], {icon: myIcon}).addTo(map);
+
     }
-    map.fitBounds(L.polygon(pts).getBounds());
+
+    map.fitBounds(pts);
+
+    //var hull = L.polygon(pts.concaveHull(100), {color: '#00F', fillColor: '#00F', fillOpacity: 0.4, weight: 1});
+    //hull.addTo(map);
+    //map.fitBounds(hull);
 }
 
 </script>
 
-<script type='text/javascript' src="http://127.0.0.1:5000/distance?jsonp=JSONP&loc=54.8625731,83.0933268&time=100"></script>
 <!--
-<script type='text/javascript' src="data300.js"></script>
+<script type='text/javascript' src="http://127.0.0.1:5000/distance?jsonp=JSONP&loc=54.8625731,83.0933268&time=100"></script>
 -->
+<script type='text/javascript' src="data100.js"></script>
+
 </body>
 
 
