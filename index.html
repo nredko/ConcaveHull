@@ -3,7 +3,7 @@
     <title>Leaflet</title>
 <link rel="stylesheet" href="leaflet.css" />
 <script src="leaflet.js"></script>    
-<script type='text/javascript' src="Marker.Text.js"></script>
+<!--script type='text/javascript' src="Marker.Text.js"></script-->
     <style type="text/css">
         .label {
             margin-top: 0px !important;
@@ -11,7 +11,6 @@
 
         }
     </style>
-<script src="hull.js"></script>    
 </head>
 <body>
     <div style="width:100%; height:100%" id="map"></div>
@@ -41,8 +40,7 @@ map.addLayer(new L.TileLayer('http://{s}.tiles.mapbox.com/v3/nredko.ifiekjj3/{z}
 var DEBUG = false;
 var DEBUG1 = false;
 function JSONP(obj){
-    var points = obj.points;//.getUnique();
-    //if(DEBUG) 
+    var points = obj.points;
     console.log(points.length + " points.");
     var pts = [];
     for(var i = 0; i < points.length; i++){
@@ -62,22 +60,11 @@ function JSONP(obj){
 
     }
     map.fitBounds(pts);
-//    console.log("56 <-> 2 = "+pts[56].distance2(pts[2]) + "("+pts[56].distanceTo(pts[2])+"m)");
-    var hull = pts.concaveHull(85000)
-    var hullP = L.polygon(hull, {color: '#00F', fillColor: '#00F', fillOpacity: 0.5, weight: 1});
-    console.log(hull.length + " points in hull.");
-    hullP.addTo(map);
-
-//    test = [pts[22], pts[2], pts[27]];
-//    console.log("22 -> 2 -> 27 => 2" + test.intersect(pts[2]));
 }
 
 </script>
 
-<!--
 <script type='text/javascript' src="http://127.0.0.1:5000/distance?jsonp=JSONP&loc=54.8625731,83.0933268&time=100"></script>
--->
-<script type='text/javascript' src="data100.js"></script>
 
 </body>
 
