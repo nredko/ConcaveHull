@@ -88,7 +88,7 @@ Array.prototype.intersect = function(p){
     }
     return false;
 }
-Array.prototype.concaveHull = function(maxDistance2){
+Array.prototype.concaveHull = function(maxDistance){
     if(this.length <= 3)
         return this;
     console.time("Hull");
@@ -126,7 +126,7 @@ Array.prototype.concaveHull = function(maxDistance2){
                 console.log(""+byAngle[i].name + ": " +curr.getAngle(prev, byAngle[i]).toFixed(2) +"°, "+ curr.distanceTo(byAngle[i]).toFixed(2)+"m")
         }
         for(var i = 0, l = byAngle.length; i < l; i++){
-            if(curr.distanceTo(byAngle[i]) < maxDistance2){ /* && !hull.intersect(byAngle[i])){ */
+            if(curr.distanceTo(byAngle[i]) < maxDistance && !hull.intersect(byAngle[i])){ 
                 next = byAngle[i];
                 break;
             }
