@@ -19,7 +19,7 @@
 <script type='text/javascript'>
 
 var map = L.map('map');
-map.addLayer(new L.TileLayer('http://{s}.tiles.mapbox.com/v3/nredko.ifiekjj3/{z}/{x}/{y}.png'));
+map.addLayer(new L.TileLayer('http://{s}.tiles.mapbox.com/v3/dennisl.map-dfbkqsr2/{z}/{x}/{y}.png'));
 
 var DEBUG = true;
 var DEBUG1 = true;
@@ -43,7 +43,7 @@ function JSONP(obj){
 
     }
     map.fitBounds(pts);
-    var hull = pts.concaveHull(120);
+    var hull = pts.concaveHull(500);
     var hullP = L.polygon(hull, {color: '#00F', fillColor: '#00F', fillOpacity: 0.5, weight: 1});
     console.log(hull.length + " points in hull.");
     hullP.addTo(map);
@@ -51,7 +51,7 @@ function JSONP(obj){
 
 </script>
 
-<script type='text/javascript' src="data50.js"></script>
+<script type='text/javascript' src="adam.js"></script>
 
 </body>
 
